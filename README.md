@@ -1,18 +1,33 @@
-# mlproject
-## An End-to-End ML Project with deployment
+# End to End MAchine Learning Project
 
-# Environment Setup
+1.Docker Build checked
+2.Github Workflow
+3.Iam User In AWS
 
-### Create Environment
-```conda create --prefix ./env python=3.8 -y```
+# Docker Setup In EC2 commands to be Executed
+#Optional
+```sudo apt-get update -y```
 
-### Activate environment
-```Conda activate ./env```
+```sudo apt-get upgrade```
 
-### Install requirements
+#Required
 
-```pip install -r requirements.txt```
+```curl -fsSL https://get.docker.com -o get-docker.sh```
 
-### Run the App
+```sudo sh get-docker.sh```
 
-```python app.py```
+```sudo usermod -aG docker ubuntu```
+
+```newgrp docker```
+
+# Configure EC2 as self-hosted runner:
+
+AWS_ACCESS_KEY_ID=
+
+AWS_SECRET_ACCESS_KEY=
+
+AWS_REGION = 
+
+AWS_ECR_LOGIN_URI =
+
+ECR_REPOSITORY_NAME = 
